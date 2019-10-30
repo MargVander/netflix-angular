@@ -1,0 +1,5 @@
+<div  *ngFor="let movie of movies">
+  <div class="img-wrapper">
+  <a [routerLink]="['page', movie.id]"><img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}"></a>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.logo{
+  width: 100px;
+  margin-right: 20px;
+}
+nav{
+  background: black;
+  color: white;
+  font-size: 14px;
+}
+nav a{
+  color: white;
+  margin-right: 10px;
+}
+nav a:hover{
+  text-decoration: none;
+  color: darkgrey;
+}
