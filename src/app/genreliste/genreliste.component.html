@@ -1,9 +1,6 @@
-<div class="imgheader col-md-12 row">
-  <div class="container col-md-6"><img src="https://image.noelshack.com/fichiers/2019/44/3/1572447131-rhpstrans.png">
-    <p>Brad et Janet sont coincés sous la pluie en route chez leur ami. Ils se retrouvent dans un château inquiétant peuplé de personnages loufoques et étranges.</p>
-  </div>
-  <div class="container col-md-6"></div>
-</div>
+<app-randombanner></app-randombanner>
+
+
 <div *ngFor="let genre of genres">
   <h2>{{genre.name}}</h2>
   <app-movielist class="d-flex list" [id]="genre.id"></app-movielist>

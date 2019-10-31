@@ -40,6 +40,16 @@ export class MovieService {
     )
   }
 
+  getRandomMovie():Observable<any>{
+    return this.http.get<any>(`https://api.themoviedb.org/3/movie/${Math.floor(Math.random() * 501) + 100}?api_key=87dfa1c669eea853da609d4968d294be&language=fr`)
+    .pipe(
+      tap(data =>{
+        console.log(data)
+      }),
+      catchError(this.handleError('getRandomMovie', []))
+    )
+  }
+
 
 
   /**

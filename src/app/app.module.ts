@@ -8,6 +8,7 @@ import { GenrelisteComponent } from './genreliste/genreliste.component';
 import { MovielistComponent } from './movielist/movielist.component';
 import { PageComponent } from './page/page.component';
 import { HeaderComponent } from './header/header.component';
+import { RandombannerComponent } from './randombanner/randombanner.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     GenrelisteComponent,
     MovielistComponent,
     PageComponent,
-    HeaderComponent
+    HeaderComponent,
+    RandombannerComponent
   ],
   imports: [
     BrowserModule,
